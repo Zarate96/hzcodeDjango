@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@@+0!4wl+2bg)w4gg0$slrbo)-9)%2l_8sp)mk8buehs_zem&$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hzcode.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -126,7 +126,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/img/'
