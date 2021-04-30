@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@@+0!4wl+2bg)w4gg0$slrbo)-9)%2l_8sp)mk8buehs_zem&$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['hzcode.herokuapp.com', '127.0.0.1']
 
@@ -138,6 +138,3 @@ STATICFILES_DIRS = [
 ]
 
 GOOGLE_RECAPTCHA_SECRET_KEY = config('RECAPTCHA_KEY', default='')
-
-#whitenoise settings
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
