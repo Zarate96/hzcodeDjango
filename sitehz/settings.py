@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     #MY_APPS
     'pages.apps.PagesConfig'
 ]
@@ -134,7 +135,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/img/'
